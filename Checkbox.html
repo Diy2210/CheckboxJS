@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <center><h1>Select all</h1></center>
+    </head>
+    <script lang="JS" type="text/javascript">
+        function CheckAll()
+        {
+            var i;
+            for(i=0; i<document.name.elements.length; i++)
+                {
+                    if(document.name.check.checked == true)
+                        {document.name.elements[i].checked = true;}
+                    else {document.name.elements[i].checked = false;}
+                }
+        }
+    </script>
+    <center><form method="post" name="name">
+        <input name="check" type="checkbox" onClick="CheckAll()" Select all
+><br><br>
+        <input type='checkbox' value="1"> box1<br>
+        <input type='checkbox' value="2"> box2<br>
+        <input type='checkbox' value="3"> box3<br>
+        <input type='checkbox' value="4"> box4<br>
+        <input type='checkbox' value="5"> box5<br>
+        <input type='checkbox' value="6"> box6<br>
+        <input type='checkbox' value="7"> box7<br>
+        <input type='checkbox' value="8"> box8<br>
+        <input type='checkbox' value="9"> box9<br>
+        <input type='checkbox' value="10"> box10<br>
+        </form></center>
+</html>
